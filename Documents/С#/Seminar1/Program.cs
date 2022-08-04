@@ -1,18 +1,11 @@
-﻿Console.Write("Введите число №1: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
+﻿Console.Write("Введите число N:");
+int number = Convert.ToInt32(Console.ReadLine());
 
-Console.Write("Введите число №2: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+int negativeNumber = number * (-1);
 
-if (firstNumber == secondNumber * secondNumber) //f = 25, s = 5
+while (negativeNumber <= number) //пока несправедливо условие
 {
-    Console.WriteLine(firstNumber + " является квадратом от " + secondNumber);
-    // Конкатенация - процесс сложения строк: "1" + "1" = "11"
-}
-// "!=" -  проверка на неравенство 5 != 5 - False
-// "==" - равенство. 5 == 5 - True
-else // if (firstNumber != secondNumber * secondNumber)
-{
-    Console.WriteLine(firstNumber + " НЕ является квадратом от " + secondNumber);
+    Console.WriteLine(negativeNumber);
+    negativeNumber++;
 }
 
