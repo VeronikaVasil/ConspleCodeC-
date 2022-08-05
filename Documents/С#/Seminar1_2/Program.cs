@@ -1,13 +1,12 @@
 ﻿
-        int a, b;
+int a, b;
  
-        Console.WriteLine("Введите два числа : ");
+Console.WriteLine("Введите два числа : ");
+a = Convert.ToInt32(Console.ReadLine());
  
-        a = Convert.ToInt32(Console.ReadLine());
+b = Convert.ToInt32(Console.ReadLine());
  
-        b = Convert.ToInt32(Console.ReadLine());
- 
-        if (a > b)
+    if (a > b)
         
         {
  
